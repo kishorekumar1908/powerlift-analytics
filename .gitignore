@@ -1,0 +1,13 @@
+# Ignore all raw datasets
+data/raw/**
+
+# Keep the folder structure
+!data/raw/.gitkeep
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Processed datasets
+data/processed/**
+!data/processed/.gitkeep
