@@ -1,0 +1,53 @@
+USE PowerLiftDW;
+
+CREATE TABLE dim_athlete (
+    AthleteKey INT AUTO_INCREMENT PRIMARY KEY,
+    AthleteID VARCHAR(10) NOT NULL UNIQUE,
+    AthleteName VARCHAR(100) NOT NULL,
+    Sex CHAR(1) NOT NULL,
+    BirthYearClass VARCHAR(20)
+);
+
+CREATE TABLE dim_date (
+    DateKey INT PRIMARY KEY,
+    FullDate DATE NOT NULL UNIQUE,
+    Year SMALLINT NOT NULL,
+    Quarter TINYINT NOT NULL,
+    Month TINYINT NOT NULL,
+    MonthName VARCHAR(15) NOT NULL,
+    WeekOfYear TINYINT NOT NULL,
+    DayOfMonth TINYINT NOT NULL,
+    DayOfWeek VARCHAR(15) NOT NULL
+);
+
+CREATE TABLE dim_meet (
+    MeetKey INT AUTO_INCREMENT PRIMARY KEY,
+    MeetName VARCHAR(150) NOT NULL,
+    MeetDate DATE NOT NULL,
+    UNIQUE (MeetName, MeetDate)
+);
+
+CREATE TABLE dim_federation (
+    FederationKey INT AUTO_INCREMENT PRIMARY KEY,
+    FederationName VARCHAR(50) NOT NULL UNIQUE
+);
+
+CREATE TABLE dim_weight_class (
+    WeightClassKey INT AUTO_INCREMENT PRIMARY KEY,
+    WeightClassKg VARCHAR(20) NOT NULL UNIQUE
+);
+
+CREATE TABLE dim_equipment (
+    EquipmentKey INT AUTO_INCREMENT PRIMARY KEY,
+    EquipmentName VARCHAR(30) NOT NULL UNIQUE
+);
+
+CREATE TABLE dim_event (
+    EventKey INT AUTO_INCREMENT PRIMARY KEY,
+    EventName VARCHAR(20) NOT NULL UNIQUE
+);
+
+CREATE TABLE dim_age_class (
+    AgeClassKey INT AUTO_INCREMENT PRIMARY KEY,
+    AgeClassName VARCHAR(30) NOT NULL UNIQUE
+);
