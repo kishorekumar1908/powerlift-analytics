@@ -1,13 +1,19 @@
 # Ignore all raw datasets
 data/raw/**
 
-# Keep the folder structure
+# Keep folder structure
 !data/raw/.gitkeep
 
-# Python cache
+# Ignore processed datasets
+data/processed/**
+
+# Keep folder structure
+!data/processed/.gitkeep
+
 __pycache__/
 *.py[cod]
 
-# Processed datasets
-data/processed/**
-!data/processed/.gitkeep
+.env
+
+.DS_Store
+Thumbs.db
