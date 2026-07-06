@@ -23,8 +23,9 @@ CREATE TABLE dim_date (
 CREATE TABLE dim_meet (
     MeetKey INT AUTO_INCREMENT PRIMARY KEY,
     MeetName VARCHAR(150) NOT NULL,
+    MeetTown VARCHAR(100),
     MeetDate DATE NOT NULL,
-    UNIQUE (MeetName, MeetDate)
+    UNIQUE(MeetName, MeetDate)
 );
 
 CREATE TABLE dim_federation (
