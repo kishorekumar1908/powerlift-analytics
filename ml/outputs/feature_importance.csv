@@ -1,0 +1,16 @@
+Feature,Importance
+numeric__CareerBestTotal,0.9307514385021796
+numeric__Age,0.015391205583494333
+numeric__BodyweightKg,0.009778481307376114
+numeric__PreviousTotal,0.008087999585845542
+categorical__Sex_M,0.007705958807939555
+categorical__Sex_F,0.0073350420993773
+numeric__TotalImprovement,0.006478584924357009
+numeric__StrengthRatio,0.004972253498595457
+numeric__DaysSinceLastCompetition,0.003883544227435228
+numeric__CompetitionNumber,0.0027078026003705853
+categorical__Equipment_Raw,0.0018044661019767571
+categorical__Equipment_Single-ply,0.0011032227610523469
+categorical__Equipment_Wraps,0.0
+categorical__Tested_Unknown,0.0
+categorical__Tested_Yes,0.0
